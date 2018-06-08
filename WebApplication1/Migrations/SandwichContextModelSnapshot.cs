@@ -31,6 +31,8 @@ namespace WebApplication1.Migrations
 
                     b.Property<decimal>("Price");
 
+                    b.Property<string>("Rating");
+
                     b.HasKey("ID");
 
                     b.ToTable("Sandwich");

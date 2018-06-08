@@ -23,13 +23,15 @@ namespace WebApplication1.Models
                     {
                         Name = "BLT",
                         Birthday = DateTime.Parse("1996-11-8"),
-                        Price = 5.00M
+                        Price = 5.00M,
+                        Rating = "Great!"
                     },
                     new Sandwich
                     {
                         Name = "Club",
                         Birthday = DateTime.Parse("1492-2-2"),
-                        Price = 22.22M
+                        Price = 22.22M,
+                        Rating = "Good!"
                     }
                     );
                 context.SaveChanges();

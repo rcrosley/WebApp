@@ -15,5 +15,6 @@ namespace WebApplication1.Models
         [DataType(DataType.Date)]
         public DateTime Birthday { get; set; }
         public decimal Price { get; set; }
+        public string Rating { get; set; }
     }
 }
