@@ -21,9 +21,15 @@ namespace WebApplication1.Pages.Sandwiches
 
         public IList<Sandwich> Sandwich { get;set; }
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(string searchString)
         {
-            Sandwich = await _context.Sandwich.ToListAsync();
+            var sandwiches = from s in _context.Sandwich select s;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                sandwiches = sandwiches.Where(str => str.Name.Contains(searchString));
+            }
+            Sandwich = await sandwiches.ToListAsync();
         }
     }
 }
