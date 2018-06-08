@@ -11,7 +11,7 @@ namespace WebApplication1.Models
         public int ID { get; set; }
         public string Name { get; set; }
 
-        [Display(Name = "Release Date")]
+        [Display(Name = "Birthday")]
         [DataType(DataType.Date)]
         public DateTime Birthday { get; set; }
         public decimal Price { get; set; }

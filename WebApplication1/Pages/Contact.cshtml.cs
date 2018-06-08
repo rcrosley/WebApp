@@ -12,7 +12,7 @@ namespace WebApplication1.Pages
 
         public void OnGet()
         {
-            Message = "Your contact page.";
+            Message = "Contact us if you have any questions about our yummy sandwiches!";
         }
     }
 }
