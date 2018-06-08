@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication1.Models
 {
@@ -9,6 +10,9 @@ namespace WebApplication1.Models
     {
         public int ID { get; set; }
         public string Name { get; set; }
+
+        [Display(Name = "Release Date")]
+        [DataType(DataType.Date)]
         public DateTime Birthday { get; set; }
         public decimal Price { get; set; }
     }
